@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class = "main-Content">
+    <div class = "main-content">
 
-        <aside class = "Sidebar"><img src="Images/Balloons & Beyond Logo.png" alt="Ballons and Beyond logo">
+        <aside class = "sidebar"><img class = "logo-main" src="Images/Balloons & Beyond Logo.png" alt="Ballons and Beyond logo">
 
-            <nav class = "sidebar-Nav">
+            <nav class = "sidebar-nav">
 
                 <ul>
                     <li>Dashboard</li>
@@ -28,16 +28,103 @@
 
             </nav>
 
-            <img src="Images/Balloons & Beyond Logo 2.png" alt="Ballons and Beyond logo 2">
+            <img class = "logo-arch" src="Images/Balloons & Beyond Logo 2.png" alt="Ballons and Beyond logo 2">
         </aside>
 
-        <main class = "dashboard-Main">
+        <main class = "dashboard-main">
 
-            <header class = "Topbar">Welcome back, Amna</header>
-
-            <div class = "dashboard-Content">
-
+            <header class = "topbar">
                 
+                <div class = "welcome-text">
+                <h1>Welcome back, Amna</h1>
+                <p>Here's whats happening with your business today.</p>
+                </div>
+
+                <div class = "header-functions">
+                <div class = "header-functions-top">
+                    <input type="search" placeholder="Search...">
+                    <button class = "notificationBell">?</button>
+                    <button class = "userProfile">Amna</button>
+                </div>
+                <div class = "header-functions-bottom">
+                    <button>+ Add Event</button>
+                </div>
+                </div>
+
+
+            </header>
+
+            <div class = "dashboard-content">
+
+                <section class = "statsOverview">
+
+                    <article class = "newRequests">New Requests</article>
+                    <article class = "bookedEvents">Booked Events</article>
+                    <article class = "depositsPaid">Deposits Paid</article>
+                    <article class = "currMonthRevenue">This Month's Revenue</article>
+
+                </section>
+
+                <section class = "recentQuoteRequests">
+
+                    <article class = "quoteCard">
+
+                        <!-- ADD IMAGE LATER <img src="" alt=""> -->
+                        <div class = quoteInfo>
+                            <h3>Ellie's 4th Birthday</h3>
+                            <p>April 1st, 2026</p>
+                            <p>Wayland, MI</p>
+                        </div>
+
+                        <div class = quoteDetails>
+                            <p><strong>Theme:</strong>Frozen</p>
+                            <p><strong>Services:</strong>Arch, Balloon Garland, Balloon Characters, Table setup</p>
+                        </div>
+
+                        <div class = quoteStatus>
+                            <p>Budget <strong>$500-$800</strong></p> 
+                            <span>New Request</span>
+                        </div>
+
+                    </article>
+                    
+                    <article class = "quoteCard">
+
+                        <!-- ADD IMAGE LATER <img src="" alt=""> -->
+                        <div class = quoteInfo>
+                            <h3>Maisie's 1st Birthday</h3>
+                            <p>April 30th, 2026</p>
+                            <p>Wayland, MI</p>
+                        </div>
+
+                        <div class = quoteDetails>
+                            <p><strong>Theme:</strong>Berry First Birthday</p>
+                            <p><strong>Services:</strong>Arch, Balloon Garland, Table setup</p>
+                        </div>
+
+                        <div class = quoteStatus>
+                            <p>Budget <strong>$500-$800</strong></p> 
+                            <span>New Request</span>
+                        </div>
+
+                    </article>
+
+                </section>
+
+                <section class = "upcomingEvents">
+
+
+                </section>
+                
+                <section class = "paymentsOverview">
+
+
+                </section>
+
+                <section class = "recentMessages">
+
+
+                </section>
 
             </div>
         </main>

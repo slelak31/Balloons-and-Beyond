@@ -1,3 +1,17 @@
+:root {
+ --background: #F8F6F4;
+ --card: #FFFFFF;
+ --pink-primary: #E88BA5;
+ --pink-light: #FCE7EE;
+ --cream: #F7F1EB;
+ --text-primary: #3D3D3D;
+ --text-secondary: #7A7A7A;
+ --border: #EFE6E0;
+ --green: #6CA77A;
+ --yellow: #D9B56D;
+ --purple: #A89CC8;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,22 +22,29 @@ body {
     min-height: 100vh;
 }
 
+a {
+    color: var(--pink-primary);
+    text-decoration: none;
+}
+
 .main-content {
     display: flex;
-    background-color: lightgray;
+    background-color: var(--background);
     min-height: 100vh;
 }
 
 .sidebar {
-    background-color: lightcoral;
+    background-color: var(--background);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex: 0 0 300px;
+    border-right: 3px solid var(--border);
 }
 
 .dashboard-main {
     flex: 1;
+    padding: 2rem;
 }
 
 .logo-main {
@@ -37,7 +58,6 @@ body {
 }
 
 .sidebar-nav {
-    background-color: aqua;
 }
 
 .sidebar-nav ul {
@@ -51,7 +71,7 @@ body {
 .topbar {
     display: flex;
     justify-content: space-between;
-    padding: .5rem 1rem;
+    margin-bottom: 1rem;
 }
 
 .welcome-text {
@@ -82,4 +102,47 @@ body {
 
 .recentQuoteRequests {
     grid-column: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    background-color: ;
+}
+
+.sectionHeader {
+    display: flex;
+    justify-content: space-between;
+}
+.sectionHeader img{
+    width: 30px;
+    height: 30px;
+}
+
+.sectionTitle {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.upcomingEvents {
+    grid-column: 2 / 2;
+}
+
+.paymentsOverview {
+    grid-column: 2 / 2;
+}
+
+.recentMessages {
+    grid-column: 1 / 1;
+}
+
+.card {
+    background-color: var(--card);
+    border-radius: 16px;
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+}
+
+.cardRow {
+    display: flex;
+    border-top: 1px solid var(--border);
+    justify-content: space-between;
 }

@@ -58,72 +58,175 @@
 
                 <section class = "statsOverview">
 
-                    <article class = "newRequests">New Requests</article>
-                    <article class = "bookedEvents">Booked Events</article>
-                    <article class = "depositsPaid">Deposits Paid</article>
-                    <article class = "currMonthRevenue">This Month's Revenue</article>
+                    <article class = "card statsCard">New Requests</article>
+                    <article class = "card statsCard">Booked Events</article>
+                    <article class = "card statsCard">Deposits Paid</article>
+                    <article class = "card statsCard">This Month's Revenue</article>
 
                 </section>
 
-                <section class = "recentQuoteRequests">
+                <section class = "card recentQuoteRequests">
 
-                    <article class = "quoteCard">
+                    <header class = "sectionHeader">
+                        <h3>Recent Quote Requests</h3>
+                        <a href="#">View all</a>
+                    </header>
 
-                        <!-- ADD IMAGE LATER <img src="" alt=""> -->
-                        <div class = quoteInfo>
-                            <h3>Ellie's 4th Birthday</h3>
-                            <p>April 1st, 2026</p>
-                            <p>Wayland, MI</p>
-                        </div>
+                    <div class = "quoteRequests">
+                        <article class = "cardRow quoteCard">
 
-                        <div class = quoteDetails>
-                            <p><strong>Theme:</strong>Frozen</p>
-                            <p><strong>Services:</strong>Arch, Balloon Garland, Balloon Characters, Table setup</p>
-                        </div>
+                            <!-- ADD IMAGE LATER <img src="" alt=""> -->
+                            <div class = quoteInfo>
+                                <h3>Ellie's 4th Birthday</h3>
+                                <p>April 1st, 2026</p>
+                                <p>Wayland, MI</p>
+                            </div>
 
-                        <div class = quoteStatus>
-                            <p>Budget <strong>$500-$800</strong></p> 
-                            <span>New Request</span>
-                        </div>
+                            <div class = quoteDetails>
+                                <p><strong>Theme:</strong>Frozen</p>
+                                <p><strong>Services:</strong>Arch, Balloon Garland, Balloon Characters, Table setup</p>
+                            </div>
 
-                    </article>
+                            <div class = quoteStatus>
+                                <p>Budget <strong>$500-$800</strong></p> 
+                                <span>New Request</span>
+                            </div>
+
+                        </article>
+                        
+                        <article class = "cardRow quoteCard">
+
+                            <!-- ADD IMAGE LATER <img src="" alt=""> -->
+                            <div class = quoteInfo>
+                                <h3>Maisie's 1st Birthday</h3>
+                                <p>April 30th, 2026</p>
+                                <p>Wayland, MI</p>
+                            </div>
+
+                            <div class = quoteDetails>
+                                <p><strong>Theme:</strong>Berry First Birthday</p>
+                                <p><strong>Services:</strong>Arch, Balloon Garland, Table setup</p>
+                            </div>
+
+                            <div class = quoteStatus>
+                                <p>Budget <strong>$500-$800</strong></p> 
+                                <span>New Request</span>
+                            </div>
+
+                        </article>
+                    </div>
+
+                </section>
+
+                <section class = "card upcomingEvents">
                     
-                    <article class = "quoteCard">
-
-                        <!-- ADD IMAGE LATER <img src="" alt=""> -->
-                        <div class = quoteInfo>
-                            <h3>Maisie's 1st Birthday</h3>
-                            <p>April 30th, 2026</p>
-                            <p>Wayland, MI</p>
+                    <header class = "sectionHeader">
+                        <div class = "sectionTitle">
+                        <img src="Images/Calendar Icon.svg" alt="Calendar Icon">
+                        <h3>Upcoming Events</h3>
                         </div>
+                        <a href="#">View calendar</a>
+                    </header>
 
-                        <div class = quoteDetails>
-                            <p><strong>Theme:</strong>Berry First Birthday</p>
-                            <p><strong>Services:</strong>Arch, Balloon Garland, Table setup</p>
-                        </div>
+                    <div class = "eventSection">
 
-                        <div class = quoteStatus>
-                            <p>Budget <strong>$500-$800</strong></p> 
-                            <span>New Request</span>
-                        </div>
+                    <article class = "cardRow eventCard">
+
+                        <!-- ADD ICON HERE <img src="" alt="date of event"> -->
+                         <div class = eventInfo>
+                                <h4>Baby Shower</h4>
+                                <p>3:00PM - 7:00PM</p>
+                                <p>Kentwood, MI</p>
+                            </div>
+
+                            <div class = eventStatus>
+                                <span>Setup</span>
+                            </div>
 
                     </article>
 
-                </section>
+                    <article class = "cardRow eventCard">
 
-                <section class = "upcomingEvents">
+                        <!-- ADD ICON HERE <img src="" alt="date of event"> -->
+                         <div class = eventInfo>
+                                <h4>Grad Party</h4>
+                                <p>11:00AM - 2:00PM</p>
+                                <p>Grand Rapids, MI</p>
+                            </div>
 
+                            <div class = eventStatus>
+                                <span>Confirmed</span>
+                            </div>
+
+                    </article>
+
+                    </div>
 
                 </section>
                 
-                <section class = "paymentsOverview">
+                <section class = "card paymentsOverview">
 
+                    <header class = "sectionHeader">
+                        <div class = "sectionTitle">
+                        <img src="Images/Currency Icon.svg" alt="Currency Icon">
+                        <h3>Payments Overview</h3>
+                        </div>
+                        <a href="#">View all</a>
+                    </header>
+
+                    <div class = "cardRow paymentRow">
+                        <p>Deposits Due</p>
+                        <span>3</span>
+                        <strong>$1,350</strong>
+                    </div>
+
+                    <div class = "cardRow paymentRow">
+                        <p>Balance Due</p>
+                        <span>2</span>
+                        <strong>$950</strong>
+                    </div>
+
+                    <div class = "cardRow paymentRow">
+                        <p>Paid This Month</p>
+                        <span>7</span>
+                        <strong>$2,850</strong>
+                    </div>
+
+                    <footer class = "sectionFooter">
+                        <button class = "paymentButton">Record Payment</button>
+                    </footer>
 
                 </section>
 
-                <section class = "recentMessages">
+                <section class = "card recentMessages">
 
+                    <header class = "sectionHeader">
+                        <div class = "sectionTitle">
+                        <h3>Recent Messages</h3>
+                        </div>
+                        <a href="#">View all messages</a>
+                    </header>
+                    
+                    <article class = "cardRow messageCard">
 
+                        <!-- ADD ICON HERE <img src="" alt="date of event"> -->
+
+                        <div class = messageSender>
+                            SR
+                        </div>
+
+                         <div class = messageContent>
+                                <h3>Sarah Rodriguez</h3>
+                                <p>Hi! I'm interested in a balloon setup 
+                                    for my daughter's 2nd birthday...</p>
+                            </div>
+
+                            <div class = messageStatus>
+                                <time datetime="2026-06-02T14:00">2h ago</time>
+                                <span>1</span>
+                            </div>
+
+                    </article>
                 </section>
 
             </div>

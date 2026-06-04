@@ -89,14 +89,14 @@ a {
 
 .dashboard-content{
     display: grid;
-    grid-template-columns: 2.5fr 1.5fr;
+    grid-template-columns: 2.7fr 1.3fr;
     gap: 1rem;
 }
 
 .statsOverview {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, .87fr) 1.3fr;
     gap: 1rem;
-    justify-content: space-between;
     grid-column: 1 / -1;
 }
 
@@ -139,10 +139,66 @@ a {
     border-radius: 16px;
     padding: 1.5rem;
     border: 1px solid var(--border);
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
 .cardRow {
     display: flex;
     border-top: 1px solid var(--border);
     justify-content: space-between;
+}
+
+.iconBubble {
+    width: 72px;
+    height: 72px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+}
+
+.statsCard img {
+    width: 36px;
+    height: 36px;
+}
+
+.card.statsCard {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.statsCardInfo {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.statsCardInfo span {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.statsCardInfo p {
+    font-size: .80rem;
+    font-weight: 500;
+    color: gray;
+}
+
+.pink {
+    background-color: var(--pink-light);
+}
+
+.yellow {
+    background-color: var(--yellow);
+}
+
+.green {
+    background-color: var(--green);
+}
+
+.purple {
+    background-color: var(--purple);
 }

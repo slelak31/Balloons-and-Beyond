@@ -99,7 +99,7 @@ a {
 .welcome-text {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: .5rem;
 
 }
 
@@ -269,8 +269,31 @@ a {
     color: var(--blue);
 }
 .paymentRow {
-
+    grid-template-columns: 110px 125px minmax(0, 1fr);
+    gap: .8rem;
+    align-items: center;
 }
+.paymentRow .paymentCount {
+    justify-self: center;
+}
+
+.paymentRow .paymentSum {
+    justify-self: end;
+}
+
+.sectionFooter {
+    display: flex;
+    justify-content: center;
+}
+
+.sectionFooter .paymentButton {
+    white-space: nowrap;
+    border: none;
+    background-color: var(--pink-primary);
+    color: var(--card);
+    padding: .75rem 7.3rem;
+    border-radius: .3rem;
+}`
 .messageCard {
 
 }

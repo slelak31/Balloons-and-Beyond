@@ -165,18 +165,6 @@ a {
     align-items: center;
 }
 
-.upcomingEvents {
-    grid-column: 7 / 9;
-}
-
-.paymentsOverview {
-    grid-column: 7 / 9;
-}
-
-.recentMessages {
-    grid-column: 1 / 7;
-}
-
 .card {
     background-color: var(--card);
     border-radius: 16px;
@@ -190,6 +178,10 @@ a {
 }
 
 .card.upcomingEvents {
+    padding: 1rem 1rem 0 1rem;
+}
+
+.card.recentMessages {
     padding: 1rem 1rem 0 1rem;
 }
 
@@ -293,9 +285,36 @@ a {
     color: var(--card);
     padding: .75rem 7.3rem;
     border-radius: .3rem;
-}`
+}
 .messageCard {
+    grid-template-columns: 232px minmax(0, 1fr) 140px;
+    gap: 2rem;
+    align-items: center;
+}
 
+.messageCard .messageSender {
+    display: flex;
+    gap: 1rem;
+    padding-right: 2rem;
+}
+
+.messageCard .senderInitials {
+    color: var(--pink-primary);
+}
+
+.senderName {
+    white-space: nowrap;
+    align-self: center;
+}
+
+.messageStatus {
+    display: flex;
+    gap: 1rem;
+    align-content: center;
+    justify-self: end;
+}
+.messageNotifications {
+    color: var(--card);
 }
 
 .date,
@@ -357,6 +376,32 @@ a {
     padding: .5rem;
 }
 
+.initialsBubble {
+    width: 54px;
+    height: 54px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.notificationBubble {
+    width: 22px;
+    height: 22px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+}
+
 span.month {
     color: var(--red);
 }
@@ -410,6 +455,10 @@ strong.day {
 
 .pink {
     background-color: var(--pink-light);
+}
+
+.pink-primary {
+    background-color: var(--pink-primary);
 }
 
 .yellow {

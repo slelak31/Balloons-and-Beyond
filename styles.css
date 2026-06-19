@@ -109,6 +109,21 @@ a {
     gap: 1rem;
 }
 
+.notificationBell {
+    width: 20px;
+    height: 20px;
+}
+
+.addEventBtn {
+    white-space: nowrap;
+    border: none;
+    background-color: var(--pink-primary);
+    color: var(--card);
+    padding: .75rem 2rem;
+    border-radius: .5rem;
+    font-size: 1rem;
+}
+
 .dashboard-content{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -286,6 +301,7 @@ a {
     padding: .75rem 7.3rem;
     border-radius: .3rem;
 }
+
 .messageCard {
     grid-template-columns: 232px minmax(0, 1fr) 140px;
     gap: 2rem;

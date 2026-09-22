@@ -66,7 +66,7 @@ a {
 
 .dashboard-main {
     flex: 1;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .logo-main {
@@ -94,6 +94,7 @@ a {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
+    height: 50px
 }
 
 .welcome-text {
@@ -109,19 +110,80 @@ a {
     gap: 1rem;
 }
 
-.notificationBell {
-    width: 20px;
-    height: 20px;
+.header-functions-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
 }
 
+/* Container layout */
+.search-container {
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 24px; /* Rounded pill shape */
+  padding: 4px;
+  transition: border-color 0.3s ease;
+}
+
+/* Container focus state */
+.search-container:focus-within {
+  border-color: var(--pink-primary); /* Changes color when typing */
+  box-shadow: 0 0 8px rgba(232, 139, 165, 0.2);
+}
+
+/* Input field styling */
+.search-input {
+  flex-grow: 1;
+  border: none;
+  background: transparent;
+  padding: 8px 12px;
+  font-size: 16px;
+  outline: none; /* Removes default browser outline */
+}
+
+/* Button styling */
+.search-submit {
+  background-color: var(--pink-primary);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+/* Button hover effect */
+.search-submit:hover {
+  background-color: #df5d81;
+}
+
+.addEventBtn img {
+    width: 15px;
+    height: 15px;
+}
+
+.notificationBell {
+    border: none;
+    background: transparent;
+}
+
+
 .addEventBtn {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
     white-space: nowrap;
     border: none;
     background-color: var(--pink-primary);
     color: var(--card);
-    padding: .75rem 2rem;
+    padding: .75rem 1.5rem;
     border-radius: .5rem;
-    font-size: 1rem;
 }
 
 .dashboard-content{
@@ -436,6 +498,7 @@ strong.day {
     display: flex;
     align-items: center;
     gap: 1rem;
+    padding: .67rem 1rem;
 }
 
 .statsCardInfo {
@@ -453,6 +516,19 @@ strong.day {
     font-size: .80rem;
     font-weight: 500;
     color: gray;
+}
+
+.statsCardGraph {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+
+    .statsCardImage {
+        width: 72px;
+        height: 72px;
+        align-self: center;
+    }
 }
 
 .sidebar-nav > ul {

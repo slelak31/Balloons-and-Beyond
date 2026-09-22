@@ -17,7 +17,8 @@
 <body>
     <div class = "main-content">
 
-        <aside class = "sidebar"><img class = "logo-main" src="Images/Balloons & Beyond Logo.png" alt="Ballons and Beyond logo">
+        <aside class = "sidebar">
+            <img class = "logo-main" src="Images/Balloons & Beyond Logo.png" alt="Ballons and Beyond logo">
 
             <nav class = "sidebar-nav">
 
@@ -45,17 +46,20 @@
                 
                 <div class = "welcome-text">
                 <h1>Welcome back, Amna</h1>
-                <p>Here's whats happening with your business today.</p>
+
                 </div>
 
                 <div class = "header-functions">
                 <div class = "header-functions-top">
-                    <input type="search" placeholder="Search...">
-                    <button class = "notificationBell">?</button>
+                    <button class = "addEventBtn"><img src="Images/Plus Icon.svg" alt="Plus Icon"> <span>Add Event</span></button>
+                    <form class="search-container">
+                    <input type="search" class="search-input" placeholder="Search...">
+                    <button type="submit" class="search-submit"><img src="Images/Search-Icon.svg" alt=""></button>
+                    </form>
+                    <button class = "notificationBell"><img src="Images/notification-bell-Icon.svg" alt=""></button>
                     <button class = "userProfile">Amna</button>
                 </div>
                 <div class = "header-functions-bottom">
-                    <button class = "addEventBtn">+ Add Event</button>
                 </div>
                 </div>
 
@@ -76,6 +80,9 @@
                        <span class = "statValue">8</span>
                        <p class = "cardSubtext"> up 2 from yesterday</p>
                        </div>
+                       <div class = "statsCardGraph">
+                       <img class = "statsCardImage" src="Images/graph-up.svg" alt="">
+                       </div>
                     </article>
 
                     <article class = "card statsCard">
@@ -87,6 +94,9 @@
                        <h4>Booked Events</h4> 
                        <span class = "statValue">14</span>
                        <p class = "cardSubtext"> up 3 this month</p>
+                       </div>
+                       <div class = "statsCardGraph">
+                       <img class = "statsCardImage" src="Images/graph-up.svg" alt="">
                        </div>
                     </article>
 
@@ -100,6 +110,9 @@
                        <span class = "statValue">$2,850</span>
                        <p class = "cardSubtext"> up $450 this month</p>
                        </div>
+                       <div class = "statsCardGraph">
+                       <img class = "statsCardImage" src="Images/graph-up.svg" alt="">
+                       </div>
                     </article>
 
                     <article class = "card statsCard">
@@ -107,9 +120,12 @@
                        <img src="Images/Revenue Graph Icon.svg" alt="">
                        </div>
                        <div class = "statsCardInfo">
-                       <h4>This Month's Revenue</h4> 
+                       <h4>Net Income</h4> 
                        <span class = "statValue">$6,450</span>
                        <p class = "cardSubtext"> up $1,200 vs last month</p>
+                       </div>
+                       <div class = "statsCardGraph">
+                       <img class = "statsCardImage" src="Images/graph-up.svg" alt="">
                        </div>
                     </article>
                    
@@ -124,7 +140,6 @@
                     </header>
 
                     <div class = "quoteRequests">
-
 
                         <article class = "cardRow quoteCard">
 

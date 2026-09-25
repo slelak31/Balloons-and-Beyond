@@ -79,7 +79,15 @@ a {
     height: auto;
 }
 
-.sidebar-nav {
+.sidebar-nav ul > li{
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 24px;
+        height: 24px;
+        margin-right: 1.2rem;
+    }
 }
 
 .sidebar-nav ul {
@@ -466,6 +474,25 @@ a {
 
     font-size: .9rem;
     font-weight: 600;
+}
+
+.userInitialsBubble {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    border-width: 1px;
+    border-color: var(--pink-primary);
+    border-style: solid;
+
+    font-size: .8rem;
+    font-weight: 600;
+    flex-shrink: 0;
+    color: var(--pink-primary);
 }
 
 .notificationBubble {

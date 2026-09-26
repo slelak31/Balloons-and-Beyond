@@ -359,7 +359,7 @@ a {
 }
 
 .eventStatus {
-    justify-self: end;
+    justify-self: center;
 }
 .eventStatus .status{
     color: var(--blue);

@@ -79,9 +79,13 @@ a {
     height: auto;
 }
 
-.sidebar-nav ul > li{
+.sidebar-nav ul > li a{
+    width: 90%;
     display: flex;
+    justify-content: left;
     align-items: center;
+    padding-left: 4rem;
+    font-size: medium;
 
     img {
         width: 24px;
@@ -90,12 +94,27 @@ a {
     }
 }
 
+.sidebar-nav ul > li:hover{
+    background-color: var(--pink-light);
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.sidebar-nav ul > li{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+}
+
 .sidebar-nav ul {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
     list-style: none;
-    gap: .5rem;
 }
 
 .topbar {
@@ -556,20 +575,6 @@ strong.day {
         height: 72px;
         align-self: center;
     }
-}
-
-.sidebar-nav > ul {
-
-    display: grid;
-    grid-template-rows: 1fr;
-    gap: 2rem;
-    justify-content: center;
-
-    img {
-        width: 32px;
-        height: 32px;
-    }
-
 }
 
 .pink {

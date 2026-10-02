@@ -439,10 +439,10 @@ a {
    background-position: center;
 }
 .date::before {
-   background-image: url("Images/Calendar Icon.svg");
+   background-image: url("../Images/Calendar Icon.svg");
 }
 .location::before {
-   background-image: url("Images/location marker Icon.svg");
+   background-image: url("../Images/location marker Icon.svg");
 }
 
 .iconBubble {
